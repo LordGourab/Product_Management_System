@@ -19,7 +19,7 @@ deleteProduct(id)
 }
 editProduct(product)
 {
-    return axios.post(API_URL+"/"+product.id,product);
+    return axios.post(API_URL+"/editProduct"+product.id,product);
 }
 }
 export default new ProductService;

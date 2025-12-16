@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import productService from '../service/product.service';
 
 const AddProduct = () => {
 
@@ -11,8 +12,19 @@ const AddProduct = () => {
 
     const handleChange=(e)=>{
         const value=e.target.value;
-        setProduct({...product,[e.terget.name]:value});
+        setProduct({...product,[e.target.name]:value});
     }
+    const ProductRegister=(e)=>{
+        e.preventDefault();
+        productService.saveProduct(product).then((res)=>{
+            console.log("product added successfully");
+            
+        }).catch((error)=>{
+            console.log(error);
+            
+        })
+        
+    };
 
   return (
     <>
@@ -24,7 +36,7 @@ const AddProduct = () => {
                             Add Product
                         </div>
                         <div className='card-body'>
-                            <form>
+                            <form onSubmit={(e)=> ProductRegister(e)}>
                                 <div className='mb-3'>
                                     <label>Enter Product Name</label>
                                     <input type='text' name='productName' className='form-control'

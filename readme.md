@@ -1,17 +1,29 @@
-# Full Stack Project – Backend
+# Product Management System
 
-This repository currently contains the backend part of a full stack application.
+A full-stack Product Management System built using Java Spring Boot and React.
 
-## Backend Tech Stack
-- Java
-- Spring Boot
-- REST APIs
-- Maven
-- MySQL
-- Postman (for API testing)
+## Features
+- Add product
+- View all products
+- Update product
+- Delete product
+
+## Tech Stack
+- Backend: Java, Spring Boot, REST API
+- Frontend: React
+- Database: MySQL
+- Version Control: Git & GitHub
+
+## How to Run
+### Backend
+- Import backend in IDE
+- Configure database
+- Run Spring Boot application
+
+### Frontend
+- Navigate to frontend folder
+- Run `npm install`
+- Run `npm start`
 
 ## Status
-✅ Backend completed and tested using Postman  
-🚧 Frontend (React) under development
-
-Frontend will be added to this repository later.
+Project Completed

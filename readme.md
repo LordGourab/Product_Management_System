@@ -1,3 +1,19 @@
+## Project Overview
+A full-stack Product Management System that allows users to create, view, update, and delete products using a modern REST-based architecture.
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/HomePage.png)
+
+### Add Product
+![Add Product](screenshots/AddProduct.png)
+
+### Edit Product
+![Edit Product](screenshots/EditProduct.png)
+
+
+
 # Product Management System
 
 A full-stack Product Management System built using Java Spring Boot and React.

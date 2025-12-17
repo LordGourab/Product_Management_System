@@ -64,7 +64,7 @@ const Home = () => {
                           <td>{p.price}</td>
                           <td>{p.status}</td>
                           <td>
-                            <Link to="" className="btn btn-sm btn-primary">Edit</Link>
+                            <Link to={'editProduct/'+p.id} className="btn btn-sm btn-primary">Edit</Link>
                             <button onClick={() => deleteProduct(p.id)} className="btn btn-sm btn-danger ms-1">Delete</button>
                           </td>
                         </tr>
